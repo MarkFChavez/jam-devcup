@@ -5,8 +5,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'haml'
 gem 'haml-rails'
-
-gem 'tzinfo-data'
+gem 'bootstrap-sass'
 
 group :development do
   gem 'pry'
