@@ -10,10 +10,7 @@ class TimeMachineWorker
     @inactive_messages = Message.inactive
 
     @inactive_messages.each do |message|
-      if message.time_to_send?
-        # EmailWorker.perform_async(message.id)
-        puts 'Send the email'
-      end
+      EmailWorker.perform_async(message.id) if message.time_to_send?
     end
   end
 end

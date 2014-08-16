@@ -20,6 +20,6 @@ class Message < ActiveRecord::Base
   end
 
   def time_to_send?
-    Time.now == self.send_at
+    Time.now.to_date === self.send_at.to_date
   end
 end
