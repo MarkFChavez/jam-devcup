@@ -6,6 +6,9 @@ gem 'omniauth-facebook'
 gem 'haml'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'sidekiq'
+gem 'sidetiq', :git => 'git://github.com/tobiassvn/sidetiq.git'
+gem 'sinatra', '>= 1.3.0', require: nil
 
 group :development do
   gem 'pry'

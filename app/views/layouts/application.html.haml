@@ -8,7 +8,11 @@
   %body
 
     - if user_signed_in?
-      %p.lead= "Hi #{current_user.name}"
-      = link_to "Logout", destroy_user_session_path, method: :delete
+      %div
+        %span.lead= "Hi #{current_user.name}"
+        &nbsp;
+        %span.lead= link_to "Logout", destroy_user_session_path, method: :delete
+
+    = render 'layouts/flash'
 
     = yield

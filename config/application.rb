@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module JamDevcup
   class Application < Rails::Application
+    # config.autoload_paths += %W(#{config.root}/app/workers)
     config.facebook = YAML.load_file(Rails.root + "config/facebook.yml")[Rails.env]
 
     def facebook
