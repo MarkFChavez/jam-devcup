@@ -20,6 +20,7 @@ class Message < ActiveRecord::Base
   end
 
   def time_to_send?
+    # FIXME: needs to be the exact time (if possible)
     Time.now.to_date === self.send_at.to_date
   end
 end
