@@ -9,6 +9,7 @@ gem 'bootstrap-sass'
 gem 'sidekiq'
 gem 'sidetiq', :git => 'git://github.com/tobiassvn/sidetiq.git'
 gem 'sinatra', '>= 1.3.0', require: nil
+gem 'state_machine'
 
 group :development do
   gem 'pry'
