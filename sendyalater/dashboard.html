@@ -1,0 +1,125 @@
+<html>
+<head>
+	<title>Sample title here</title>
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/tinyeditor.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	
+</head>
+<body>
+	<div class="logo col-sm-12">
+		<img src="images/logo.png">
+	</div>
+	<div class="container scroll" id="main">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="app-title">Please select a provider</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="#mail" class="smoothScroll"><button class="provider btn btn-mail">Mail</button></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#facebook" class="smoothScroll"><button class="provider btn btn-facebook">Facebook</button></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#twitter" class="smoothScroll"><button class="provider btn btn-twitter">Twitter</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="container scroll" id="mail">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Mail</h2>
+			</div>
+		</div>
+		<div class="row">
+			<form>
+				<div class="col-sm-12 form-group">
+					<label>Subject</label>
+					<input type="text" class="form-control subject" placeholder="Subject">
+				</div>
+				<div class="col-sm-12 form-group">
+					<label>To</label>
+					<input type="email" class="form-control sendto" placeholder="Send To">
+				</div>
+				<div class="col-sm-12 form-group">
+					<label>When to send</label>
+					<input type="date" class="form-control sendto" placeholder="Send To">
+				</div>
+				<div class="col-sm-12">
+
+					<textarea id="tinyeditor" style="width: 400px; height: 200px"></textarea>
+				</div>
+				<div class="col-sm-12">
+					<button class="btn btn-transparent">Send</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="container scroll" id="facebook">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Facebook</h2>
+			</div>
+		</div>
+		<div class="row">
+			<form>
+				
+			</form>
+		</div>
+	</div>
+	<div class="container scroll" id="twitter">
+		<div class="row">
+			<div class="logo col-sm-12">
+				<img src="images/logo.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Twitter</h2>
+			</div>
+		</div>
+		<div class="row">
+			<form>
+				
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="row">
+			<div class="col-sm-12">
+				&copy; JAM<br>
+				<small><a href="">Logout</a></small>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/smoothscroll.js"></script>
+	<script type="text/javascript" src="scripts/tiny.editor.packed.js"></script>
+	<script>
+		var editor = new TINY.editor.edit('editor', {
+			id: 'tinyeditor',
+			width: "100%",
+			height: 150,
+			cssclass: 'tinyeditor',
+			controlclass: 'tinyeditor-control',
+			rowclass: 'tinyeditor-header',
+			dividerclass: 'tinyeditor-divider',
+			controls: ['bold', 'italic', 'underline', 'strikethrough', '|', 'subscript', 'superscript', '|',
+				'orderedlist', 'unorderedlist', '|', 'outdent', 'indent', '|', 'leftalign',
+				'centeralign', 'rightalign', 'blockjustify', '|', 'unformat', '|', 'undo', 'redo', 'n',
+				'font', 'size', 'style', '|', 'image', 'hr', 'link', 'unlink', '|', 'print'],
+			footer: true,
+			fonts: ['Verdana','Arial','Georgia','Trebuchet MS'],
+			xhtml: true,
+			cssfile: 'custom.css',
+			bodyid: 'editor',
+			footerclass: 'tinyeditor-footer',
+			toggle: {text: 'source', activetext: 'wysiwyg', cssclass: 'toggle'},
+			resize: {cssclass: 'resize'}
+		});
+		</script>
+</body>
+</html>
