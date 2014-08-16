@@ -3,6 +3,6 @@ class TimeMachineMailer < ActionMailer::Base
 
   def send_to_future(message_id)
     @message = Message.pending.find(message_id)
-    mail :to => "mchavez@you-source.com", :subject => "DEVCUP"
+    mail :to => @message.recipient, :subject => @message.subject
   end
 end
