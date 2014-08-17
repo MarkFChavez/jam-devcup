@@ -1,0 +1,230 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0px;
+}
+
+.logo {
+  padding-top: 40px;
+  position: fixed;
+}
+
+.logo img {
+  display: block;
+  margin: auto;
+}
+
+.full-width {
+  width: 40%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  color: #000;
+}
+img.logo{
+  display: block;
+  margin: auto;
+  position: static;
+  margin-bottom: 20px;
+}
+.app-title {
+  text-align: center;
+}
+.btn-transparent {
+  background: transparent;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 0;
+  color: #ccc;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.loginForm .btn-transparent {
+  width: 40%;
+}
+.btn-transparent:hover {
+  color: #000;
+  -webkit-transition: color 500ms linear;     
+  -moz-transition: color 1000ms linear;     
+  -o-transition: color 1000ms linear;     
+  -ms-transition: color 1000ms linear;     
+  transition: color 500ms linear;
+}
+.loginForm input.form-control {
+  height: 50px;
+  color: #000;
+}
+.loginForm .form-control:focus {
+  border-color: #72797E;     
+  -webkit-transition: border-color 500ms linear;     
+  -moz-transition: border-color 1000ms linear;     
+  -o-transition: border-color 1000ms linear;     
+  -ms-transition: border-color 1000ms linear;     
+  transition: border-color 500ms linear;
+}
+.signin-btn {
+  border: 0px;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+.signin-btn i {
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 6px;
+}
+.facebook-signin {
+  background: #45629d;
+}
+.facebook-signin:hover {
+  background: #224897;
+  text-decoration: none;
+  color: #fff;
+}
+.twitter-signin {
+  background: #55acee;
+}
+.twitter-signin:hover {
+  background: #147FD1;
+  text-decoration: none;
+  color: #fff;
+}
+.thumbs {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 30px;
+}
+.heading {
+  font-size: 19px;
+}
+.thumbs div {
+  padding: 20px;
+  border: dashed 1px;
+  min-height: 148px;
+}
+.provider {
+  color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 27px;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+.provider:hover{
+  color: #fff;
+}
+.btn-facebook {
+  background: #3b5998;
+}
+.btn-facebook:hover {
+  background: #2A4172;
+}
+.btn-twitter {
+  background: #55acee; 
+}
+.btn-twitter:hover {
+  background: #0D8BEB;
+}
+.btn-mail {
+  background: #d72542; 
+}
+.btn-mail:hover {
+  background: #BE0826;
+  color  : #fff;
+}
+#main a:active,
+#main a:visited,
+#main a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.scroll a {
+  text-decoration: none;
+}
+.scroll{
+  height: 100%;
+  padding-top: 10%;
+  background: url("../images/bg.png") no-repeat bottom right;
+
+}
+#main {
+  padding-top: 20%;
+  box-sizing: border-box;
+  width: 100%;
+  color: #fff;
+  background: rgb(137,137,186); /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg5ODliYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4OTg5YmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(137,137,186,1) 0%, rgba(137,137,186,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(137,137,186,1)), color-stop(100%,rgba(137,137,186,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(137,137,186,1) 0%,rgba(137,137,186,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(137,137,186,1) 0%,rgba(137,137,186,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(137,137,186,1) 0%,rgba(137,137,186,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(137,137,186,1) 0%,rgba(137,137,186,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8989ba', endColorstr='#8989ba',GradientType=0 ); /* IE6-8 */
+
+}
+.scroll .row {
+  width: 60%;
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+}
+#mail {
+  width: 100%;
+  padding-top: 15%;
+}
+#mail .row{
+  width: 50%;
+}
+.tinyeditor {
+  display: block;
+  margin: auto;
+}
+#mail .form-control {
+  border-radius: 0px;
+}
+#facebook {
+  background: url("../images/facebookbg.png") no-repeat left bottom;
+  width: 100%;
+}
+@media only screen and (max-width: 1139px) {
+
+}
+
+@media only screen and (max-width: 1023px) {
+  .full-width {
+    width: 55%;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: 50%;
+      }
+      .full-width {
+        width: 80%;
+      }
+      .signin-btn {
+        border: 0px;
+        width: 256px;
+        height: 57px;
+        display: block;
+        margin: auto;
+      }
+      .facebook-signin:hover,
+      .twitter-signin:hover {
+        background-position: 0 -59px;
+      }
+}
+
+.top20 {
+  margin-top: 20px; 
+}
