@@ -10,23 +10,17 @@
         = f.text_field :subject, class: "form-control subject", placeholder: "Subject"
 
 
+      .col-sm-12.form-group
+        = f.label :recipient
+        = f.text_field :recipient, class: "form-control sendto", placeholder: "Send To"
 
+      .col-sm-12.form-group
+        = f.label :send_at
+        = f.datetime_field :send_at, class: "form-control sendto", placeholder: "Send At"
 
-= form_for @message do |f|
-  %div
-    = f.label :recipient
-    = f.text_field :recipient, class: "form-control"
+      .col-sm-12.form-group
+        = f.label :body
+        = f.text_area :body, class: "form-control sendto", placeholder: "Body"  
 
-  %div
-    = f.label :subject
-    = f.text_field :subject, class: "form-control"
-
-  %div
-    = f.label :body
-    = f.text_area :body, class: "form-control"
-
-  %div
-    = f.label :send_at
-    = f.datetime_field :send_at, class: "form-control"
-
-  = f.submit
+      .col-sm-12.form-group
+        =f.submit "Submit"
