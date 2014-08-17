@@ -16,11 +16,11 @@
 
       .col-sm-12.form-group
         = f.label :send_at
-        = f.datetime_field :send_at, class: "form-control sendto", placeholder: "Send At"
+        = f.datetime_field :send_at, class: "form-control sendto datetimepicker", placeholder: "When to send"
 
       .col-sm-12.form-group
         = f.label :body
         = f.text_area :body, class: "form-control sendto", placeholder: "Body"  
 
       .col-sm-12.form-group
-        =f.submit "Submit"
+        = f.submit "Submit"
