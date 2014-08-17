@@ -6,6 +6,7 @@ gem 'omniauth-facebook'
 gem 'haml'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'sidekiq'
 gem 'sidetiq', :git => 'git://github.com/tobiassvn/sidetiq.git'
 gem 'sinatra', '>= 1.3.0', require: nil
@@ -52,4 +53,3 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

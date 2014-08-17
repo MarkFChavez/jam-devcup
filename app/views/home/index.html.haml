@@ -1,4 +1,22 @@
+
+.logo.col-sm-12
+  = image_tag "logo.png"
+
 = form_for @message do |f|
+  .container.scroll#mail
+    .row
+      .col-sm-12.form-group
+        = f.label :subject
+        = f.text_field :subject, class: "form-control subject", placeholder: "Subject"
+
+
+
+
+= form_for @message do |f|
+  %div
+    = f.label :recipient
+    = f.text_field :recipient, class: "form-control"
+
   %div
     = f.label :subject
     = f.text_field :subject, class: "form-control"
