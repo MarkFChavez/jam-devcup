@@ -20,8 +20,12 @@ class Message < ActiveRecord::Base
   end
 
   def time_to_send?
-    # FIXME: needs to be the exact time (if possible)
-    # Time.now.to_date === self.send_at.to_date
-    Time.now >= self.send_at
+    now = DateTime.parse(Time.now.to_s)
+    now = now.change(offset: "+0000")
+
+    current = DateTime.parse(self.send_at.to_s)
+    current = current.change(offset: "+0000")
+
+    now >= current
   end
 end
