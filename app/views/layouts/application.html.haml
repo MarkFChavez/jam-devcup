@@ -10,3 +10,10 @@
       = link_to "Logout", destroy_user_session_path, method: :delete
 
     = yield
+
+    .footer
+      .container.full-width
+        .col-sm-6
+          &copy; JAM
+        .col-sm-6.right 
+          = link_to "Home", root_path, class: "white"

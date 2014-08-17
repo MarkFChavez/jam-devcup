@@ -3,6 +3,7 @@ class Message < ActiveRecord::Base
 
   validates :subject, presence: true
   validates :body, presence: true
+  validates :recipient, presence: true
   validates :send_at, presence: true
 
   scope :inactive, -> { where(state: :inactive) }

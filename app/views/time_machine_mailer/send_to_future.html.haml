@@ -1,1 +1,1 @@
-= @message.body
+= @message.body.try(:html_safe)

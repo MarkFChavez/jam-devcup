@@ -3,25 +3,39 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 0px;
+  height: 100%;
+  position: relative;
+}
+.mce-edit-area {
+  border-right: solid 1px !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
 .logo {
   padding-top: 40px;
-  position: fixed;
+  box-sizing: border-box;
 }
-
 .logo img {
   display: block;
   margin: auto;
 }
-
 .full-width {
   width: 40%;
-  position: absolute;
-  top: 15%;
+  margin-top: 5%;
   left: 0;
   right: 0;
   color: #000;
+  padding-bottom: 20px
+}
+.register {
+  top: 10%;
 }
 img.logo{
   display: block;
@@ -32,31 +46,31 @@ img.logo{
 .app-title {
   text-align: center;
 }
-.btn-transparent {
-  background: transparent;
+.loginForm {
+  margin-bottom: 0px;
+}
+.btn-green {
+  background: #b3d56f;
   display: block;
-  margin: 20px auto;
-  padding: 10px 0;
-  color: #ccc;
-  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin: 0px auto 10px;
+  color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   width: 100%;
 }
-.loginForm .btn-transparent {
-  width: 40%;
+.btn-green:hover {
+  background: #00adef;
+  -webkit-transition: background 500ms linear;     
+  -moz-transition: background 1000ms linear;     
+  -o-transition: background 1000ms linear;     
+  -ms-transition: background 1000ms linear;     
+  transition: background 500ms linear;
+  color: #fff;
 }
-.btn-transparent:hover {
-  color: #000;
-  -webkit-transition: color 500ms linear;     
-  -moz-transition: color 1000ms linear;     
-  -o-transition: color 1000ms linear;     
-  -ms-transition: color 1000ms linear;     
-  transition: color 500ms linear;
-}
-.loginForm input.form-control {
+.loginForm .form-control {
   height: 50px;
-  color: #000;
+  color: #333;
 }
 .loginForm .form-control:focus {
   border-color: #72797E;     
@@ -72,6 +86,7 @@ img.logo{
   padding: 20px;
   color: #fff;
   font-size: 18px;
+  text-align: center;
 }
 .signin-btn i {
   font-size: 20px;
@@ -83,14 +98,6 @@ img.logo{
 }
 .facebook-signin:hover {
   background: #224897;
-  text-decoration: none;
-  color: #fff;
-}
-.twitter-signin {
-  background: #55acee;
-}
-.twitter-signin:hover {
-  background: #147FD1;
   text-decoration: none;
   color: #fff;
 }
@@ -139,20 +146,22 @@ img.logo{
   background: #BE0826;
   color  : #fff;
 }
-#main a:active,
-#main a:visited,
-#main a:focus {
+a:hover,
+a:active,
+a:visited,
+a:focus {
   color: #fff;
   text-decoration: none;
 }
-.scroll a {
+a{
   text-decoration: none;
+  color: #fff;
 }
 .scroll{
   height: 100%;
   padding-top: 10%;
   background: url("../images/bg.png") no-repeat bottom right;
-
+  box-sizing: border-box;
 }
 #main {
   padding-top: 20%;
@@ -195,6 +204,30 @@ img.logo{
   background: url("../images/facebookbg.png") no-repeat left bottom;
   width: 100%;
 }
+.footer {
+  background: #00adef;
+  color: #fff;
+  width: 100%;
+}
+.footer .full-width {
+  position: static;
+  color: #fff;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+#index .footer {
+  position: fixed;
+  bottom: 0px;
+}
+.right {
+  text-align: right;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 1139px) {
 
 }
@@ -209,22 +242,43 @@ img.logo{
   body {
     background-size: 50%;
       }
-      .full-width {
+      .full-width, #mail {
         width: 80%;
+        top: 0%;
+      }
+      #mail {
+        background: none;
+      }
+      #mail .row {
+        width: 100%;
       }
       .signin-btn {
         border: 0px;
-        width: 256px;
+        width: 100%;
         height: 57px;
         display: block;
         margin: auto;
+        margin-bottom: 10px;
+        font-size: 14px
+      }
+      .btn-green {
+        font-size: 14px;
       }
       .facebook-signin:hover,
       .twitter-signin:hover {
         background-position: 0 -59px;
       }
+      .footer {
+        text-align: center;
+      }
+      .right {
+        text-align: center;
+      }
+      .logo img, img.logo {
+        width: 70%;
+      }
 }
 
-.top20 {
-  margin-top: 20px; 
+.center { 
+  text-align: center;
 }

@@ -11,6 +11,7 @@ gem 'sidekiq'
 gem 'sidetiq', :git => 'git://github.com/tobiassvn/sidetiq.git'
 gem 'sinatra', '>= 1.3.0', require: nil
 gem 'state_machine'
+gem 'tinymce-rails'
 
 group :development do
   gem 'pry'

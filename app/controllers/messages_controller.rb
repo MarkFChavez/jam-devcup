@@ -4,10 +4,10 @@ class MessagesController < ApplicationController
     @message.user = current_user
     @message.save!
 
-    redirect_to root_url, notice: "Success"
+    redirect_to root_url, notice: "Success! Message has been created."
 
   rescue ActiveRecord::RecordInvalid
-    redirect_to root_url, alert: "Error"
+    redirect_to root_url, alert: "All fields are required"
   end
 
   private

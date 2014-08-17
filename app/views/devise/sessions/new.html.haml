@@ -3,26 +3,26 @@
   .row
     = image_tag "logo.png", class: "logo"
 
+    = render 'layouts/flash'
+
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .loginForm
-        .row
-          .col-sm-6
-            = f.email_field :email, class: "form-control"
-          .col-sm-6
-            = f.password_field :password, class: "form-control"
-          
+        .form-group
+          = f.email_field :email, class: "form-control", placeholder: "Email", required: "required"
+        .form-group
+          = f.password_field :password, class: "form-control", placeholder: "Password"
+
         .row
           .col-sm-12
-            = f.submit "Sign in", class: "btn btn-transparent"           
+            = f.submit "Sign in", class: "btn btn-green"
+
+        .row
+          .col-sm-12.loginForm
+            = link_to "Register", new_user_registration_path, class: "btn btn-green"
 
         .row.loginForm.top20
-          .col-sm-6
-            = link_to user_omniauth_authorize_path(:facebook), class: "facebook-signin signin-btn" do
+          .col-sm-12
+            = link_to user_omniauth_authorize_path(:facebook), class: "facebook-signin signin-btn btn-block" do
               %i.fa.fa-facebook-square
               Sign in with Facebook
-
-          .col-sm-6
-            = link_to "#", class: "twitter-signin signin-btn" do
-              %i.fa.fa-twitter
-              Sign in with Twitter
 
