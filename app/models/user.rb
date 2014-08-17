@@ -36,4 +36,8 @@ class User < ActiveRecord::Base
       super
     end
   end
+
+  def from_facebook?
+    provider.present? and provider == "facebook"
+  end
 end

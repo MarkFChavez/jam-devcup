@@ -16,4 +16,8 @@
         .col-sm-6
           &copy; JAM
         .col-sm-6.right 
-          = link_to "Home", root_path, class: "white"
+          = link_to "Home", root_path, class: "white", "data-no-turbolink" => "true"
+          - if user_signed_in?
+            |
+            = link_to "Logout", destroy_user_session_path, method: :delete
+
