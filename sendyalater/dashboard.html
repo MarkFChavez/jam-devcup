@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
 <head>
 	<title>Sample title here</title>
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
@@ -41,7 +43,7 @@
 				</div>
 				<div class="col-sm-12 form-group">
 					<label>When to send</label>
-					<input type="date" class="form-control sendto" placeholder="Send To">
+					<input type="datetime-local" class="form-control sendto" placeholder="When to send">
 				</div>
 				<div class="col-sm-12">
 
@@ -83,38 +85,15 @@
 		</div>
 	</div>
 	<div class="footer">
-		<div class="row">
-			<div class="col-sm-12">
-				&copy; JAM<br>
-				<small><a href="">Logout</a></small>
-			</div>
+		<div class="container full-width">
+			<div class="col-sm-6">&copy; JAM</div>
+			<div class="col-sm-6 right">DevCup 2014</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/smoothscroll.js"></script>
 	<script type="text/javascript" src="scripts/tiny.editor.packed.js"></script>
-	<script>
-		var editor = new TINY.editor.edit('editor', {
-			id: 'tinyeditor',
-			width: "100%",
-			height: 150,
-			cssclass: 'tinyeditor',
-			controlclass: 'tinyeditor-control',
-			rowclass: 'tinyeditor-header',
-			dividerclass: 'tinyeditor-divider',
-			controls: ['bold', 'italic', 'underline', 'strikethrough', '|', 'subscript', 'superscript', '|',
-				'orderedlist', 'unorderedlist', '|', 'outdent', 'indent', '|', 'leftalign',
-				'centeralign', 'rightalign', 'blockjustify', '|', 'unformat', '|', 'undo', 'redo', 'n',
-				'font', 'size', 'style', '|', 'image', 'hr', 'link', 'unlink', '|', 'print'],
-			footer: true,
-			fonts: ['Verdana','Arial','Georgia','Trebuchet MS'],
-			xhtml: true,
-			cssfile: 'custom.css',
-			bodyid: 'editor',
-			footerclass: 'tinyeditor-footer',
-			toggle: {text: 'source', activetext: 'wysiwyg', cssclass: 'toggle'},
-			resize: {cssclass: 'resize'}
-		});
-		</script>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+	
 </body>
 </html>

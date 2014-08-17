@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, user-scalable=no">
 <head>
 	<title>Sample title here</title>
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
@@ -12,20 +13,23 @@
 			<img src="images/logo.png" class="logo">
 		</div>	
 		<form class="loginForm">
-			<div class="row">
-				<div class="col-sm-6">
-					<input class="form-control" name="username" placeholder="Username" type="text">
-				</div>
-				<div class="col-sm-6">
-					<input class="form-control" name="password" placeholder="Password" type="password">
-				</div>
+			<div class="form-group">
+				<input type="email" class="form-control"placeholder="Enter email" required>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" placeholder="Password" required>
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
-					<button class="btn btn-transparent">Login</button>
+					<button class="btn btn-green">Login</button>
 				</div>
 			</div>
 		</form>
+		<div class="row">
+			<div class="col-sm-12 loginForm">
+				<a href="register.html"><button class="btn btn-green">Register</button></a>
+			</div>
+		</div>
 		<div class="row loginForm">
 			<div class="col-sm-6">
 				<button class="facebook-signin signin-btn"><i class="fa fa-facebook-square"></i> Login with Facebook</button>
@@ -33,6 +37,12 @@
 			<div class="col-sm-6">
 				<button class="twitter-signin signin-btn"><i class="fa fa-twitter"></i> Login with Twitter</button>
 			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container full-width">
+			<div class="col-sm-6">&copy; JAM</div>
+			<div class="col-sm-6 right">DevCup 2014</div>
 		</div>
 	</div>
 </body>
